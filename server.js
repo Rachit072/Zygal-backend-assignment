@@ -6,7 +6,7 @@ const fs = require('fs');
 const app = express();
 const port = 3000;
 
-app.use(cors({ origin: 'https://zygal-backend-assignment.vercel.app' }));
+app.use(cors());
 app.use(bodyParser.json());
 const data = JSON.parse(fs.readFileSync('./data.json', 'utf-8'));
 
