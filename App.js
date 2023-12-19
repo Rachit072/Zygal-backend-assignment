@@ -6,7 +6,7 @@ function login() {
         email: email,
         password: password
     };
-    fetch('http://localhost:3000/login', {
+    fetch('https://zygal-backend-assignment.vercel.app/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json','Access-Control-Allow-Origin': '*'},
         body: JSON.stringify(data)
