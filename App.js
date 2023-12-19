@@ -6,7 +6,8 @@ function login() {
         email: email,
         password: password
     };
-    fetch('https://zygal-backend-assignment.vercel.app/login', {
+
+    fetch('https://backend-zygal-rachit072.vercel.app/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json','Access-Control-Allow-Origin': '*'},
         body: JSON.stringify(data)
@@ -25,7 +26,7 @@ function login() {
         }
     })
     .catch(error => {
-        alert("Invalid Credentials!!")
+        alert("Invalid Credentials!!");
         console.error('Error:', error);
     });
 }
